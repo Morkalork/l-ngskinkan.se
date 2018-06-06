@@ -17,15 +17,15 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 html {
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 body {
-  font-family: "Indie Flower", cursive;
-  background-image: url("./assets/the_man.png");
+  font-family: 'Indie Flower', cursive;
+  background-image: url('./assets/the_man.png');
   background-repeat: no-repeat;
   background-position: bottom right;
   @media screen and (max-width: 1200px) {

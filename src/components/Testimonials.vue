@@ -21,9 +21,12 @@
 import Ninja1 from '@/assets/ninja1.png'
 import Ninja2 from '@/assets/ninja2.png'
 import Ninja3 from '@/assets/ninja3.png'
+import Ninja4 from '@/assets/ninja4.png'
+import Ninja5 from '@/assets/ninja5.png'
+import Ninja6 from '@/assets/ninja6.png'
 
 export default {
-  data () {
+  data() {
     return {
       testimonials: [
         {
@@ -33,13 +36,30 @@ export default {
         },
         {
           img: Ninja2,
-          line: 'I vanliga fall undviker jag skinka men för långskinkan gör man ett undantag',
+          line:
+            'I vanliga fall undviker jag skinka men för långskinkan gör man ett undantag',
           signum: 'The Agron'
         },
         {
           img: Ninja3,
-          line: 'Varje gång Långskinkan kramar mig glömmer jag varför jag gick in i rummet',
+          line:
+            'Varje gång Långskinkan kramar mig glömmer jag varför jag gick in i rummet',
           signum: 'Martin Lindström'
+        },
+        {
+          img: Ninja4,
+          line: 'Långskinkan är ett stort hjärta på långa styltor',
+          signum: 'Otto Remse'
+        },
+        {
+          img: Ninja5,
+          line: 'Ganska lång, Mycket bra!',
+          signum: 'Niklas Dahlman'
+        },
+        {
+          img: Ninja6,
+          line: 'Hen är riktig gottepelle!',
+          signum: 'Michał Łusiak'
         }
       ]
     }
@@ -55,7 +75,7 @@ export default {
   align-items: flex-start;
   max-width: 1024px;
   margin: 0 auto;
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: 1024px) {
     max-width: 80%;
   }
   .testimonial {

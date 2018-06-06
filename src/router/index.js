@@ -16,10 +16,12 @@ export default new Router({
     {
       path: '/testimonials',
       component: Testimonials
-    }, {
+    },
+    {
       path: '/fun-faqs',
       component: FunFaqs
-    }, {
+    },
+    {
       path: '/pics',
       component: Pics
     }

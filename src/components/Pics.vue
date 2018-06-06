@@ -15,7 +15,7 @@
 <script>
 import TheHappy from '@/assets/the_happy.jpeg'
 export default {
-  data () {
+  data() {
     return {
       pics: [
         {
@@ -31,8 +31,8 @@ export default {
 
 <style lang="scss" scoped>
 img {
-    box-shadow: 0 0 1rem #000;
-    max-width: 80%;
-    margin: 0.5 auto;
+  box-shadow: 0 0 1rem #000;
+  max-width: 80%;
+  margin: 0.5 auto;
 }
 </style>

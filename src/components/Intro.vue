@@ -5,17 +5,22 @@
         </header>
         <section>
             <p>En man bland pojkar, en legend bland stjärnor. En skinka på samhällets julbord.</p>
-            <h3><strong>Långskinkan! {{birthday}}</strong></h3>
+            <h3><strong>Långskinkan! <blink>{{birthday}}</blink></strong></h3>
         </section>
     </article>
 </template>
 
 <script>
+import Blink from '@/components/Blink'
 export default {
-  data () {
+  components: {Blink},
+  data() {
     const today = new Date()
     return {
-      birthday: (today.getMonth() === 5 && today.getDate() === 6) ? 'Grattis på födeseldagen!' : ''
+      birthday:
+        today.getMonth() === 5 && today.getDate() === 7
+          ? 'Grattis på födeseldagen!'
+          : ''
     }
   }
 }
