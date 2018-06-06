@@ -37,6 +37,9 @@ body {
   #app {
     text-align: center;
     margin-top: 5rem;
+    p {
+      text-shadow: 0 0 0.5rem #fff; /* in case the tall långskink clashes with the text */
+    }
   }
 }
 </style>

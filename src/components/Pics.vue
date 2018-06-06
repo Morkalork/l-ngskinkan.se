@@ -26,7 +26,7 @@ export default {
         {
           src: CyborgParty,
           caption:
-            'Så här naturligt "cool" är en Långskinka i sitt naturliga tillstånd.'
+            'Så här naturligt "cool" är en Långskinka i vilt tillstånd.'
         }
       ]
     }
