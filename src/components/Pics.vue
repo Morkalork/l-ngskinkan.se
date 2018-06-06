@@ -3,7 +3,7 @@
         <header>
             <h1>Bilder</h1>
         </header>
-        <section v-for='pic in pics' :key='pic.id'>
+        <section v-for='(pic, index) in pics' :key='index'>
             <figure>
                 <img :src='pic.src' alt='En långskinkebild!' />
                 <figcaption>{{pic.caption}}</figcaption>
@@ -14,14 +14,19 @@
 
 <script>
 import TheHappy from '@/assets/the_happy.jpeg'
+import CyborgParty from '@/assets/cyborg-party.jpg'
 export default {
   data() {
     return {
       pics: [
         {
-          id: 1,
           src: TheHappy,
           caption: 'Så här glad är du om du är en Långskinka!'
+        },
+        {
+          src: CyborgParty,
+          caption:
+            'Så här naturligt "cool" är en Långskinka i sitt naturliga tillstånd.'
         }
       ]
     }
@@ -30,9 +35,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  box-shadow: 0 0 1rem #000;
-  max-width: 80%;
-  margin: 0.5 auto;
+section {
+  margin: 3rem 0;
+  img {
+    box-shadow: 0 0 1rem #000;
+    max-width: 80%;
+    margin: 0.5 auto;
+  }
 }
 </style>

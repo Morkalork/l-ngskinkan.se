@@ -10,7 +10,7 @@
                 </figure>
             </div>
             <div class='text'>
-                <p class='line'>{{testimonial.line}}</p>
+                <p class='line'>"<em>{{testimonial.line}}</em>"</p>
                 <p class='signum'> - {{testimonial.signum}}</p>
             </div>
         </section>
@@ -24,6 +24,9 @@ import Ninja3 from '@/assets/ninja3.png'
 import Ninja4 from '@/assets/ninja4.png'
 import Ninja5 from '@/assets/ninja5.png'
 import Ninja6 from '@/assets/ninja6.png'
+import Ninja7 from '@/assets/ninja7.jpg'
+import Ninja8 from '@/assets/ninja8.jpg'
+import Ninja9 from '@/assets/ninja9.jpg'
 
 export default {
   data() {
@@ -60,6 +63,22 @@ export default {
           img: Ninja6,
           line: 'Hen är riktig gottepelle!',
           signum: 'Michał Łusiak'
+        },
+        {
+          img: Ninja7,
+          line: 'Långskinkan är smartare än ett kubernetes kluster.',
+          signum: 'Mikael Brassman'
+        },
+        {
+          img: Ninja8,
+          line:
+            'det finns lika mycket tvångskram i människan som det finns skinka på jul',
+          signum: 'Lumbergh'
+        },
+        {
+          img: Ninja9,
+          line: 'Det stora hjärtat kompenserar för den lilla hjärnan - I love you man!',
+          signum: 'Chrille'
         }
       ]
     }
@@ -76,7 +95,7 @@ export default {
   max-width: 1024px;
   margin: 0 auto;
   @media screen and (max-width: 1024px) {
-    max-width: 80%;
+    max-width: 95%;
   }
   .testimonial {
     display: flex;
